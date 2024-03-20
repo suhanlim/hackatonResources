@@ -1,4 +1,4 @@
-
+우분투에서 elastic search 띄우는 과정
 
 
 1. Ubuntu 22. LTS
