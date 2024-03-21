@@ -1,5 +1,7 @@
 우분투에서 elastic search 띄우는 과정
 
+Elasticsearch 8.7.0 이 2023년 3월 31일까지라 가장 근접한 버전 및 벡터유사도 검색이
+가능한 버전
 
 1. Ubuntu 22. LTS
 

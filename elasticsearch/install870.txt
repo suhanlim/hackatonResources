@@ -1,0 +1,44 @@
+우분투에서 elastic search 8.7.0 띄우는 과정
+
+//참고
+https://pyromaniac.me/35
+
+
+sudo apt update
+sudo apt upgrade
+
+sudo apt install openjdk-11-jdk
+
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.7.0-linux-x86_64.tar.gz
+tar -xzf elasticsearch-8.7.0-linux-x86_64.tar.gz
+
+// 입장 후 하단에 
+vi ~/.profile
+
+
+//이 문장들 추가
+ES_HOME="/home/ubuntu/elasticsearch-8.7.0"
+ES_PATH_CONF="$ES_HOME/config"
+PATH="$ES_HOME/bin:$PATH"
+
+
+
+// 문장 반영 적용
+. ~/.profile
+
+
+
+// es 실행
+elasticsearch -d
+
+
+//비밀번호 변경
+elasticsearch-reset-password -i -u elastic
+
+
+//켜졌는지 확인
+curl --cacert $ES_HOME/config/certs/http_ca.crt -u elastic https://localhost:9200
+
+//es 종료
+ps -ef | grep elasticsearch
+sudo kill -9 [엘라스틱 pID]
