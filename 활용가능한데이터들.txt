@@ -1,1 +1,4 @@
+// pdf 파일들이 많네
+
 https://brand.metlife.co.kr/pn/saleStop/retrieveSaleStopProdMain.do
+https://brand.metlife.co.kr/pn/paReal/insuProductDisclMain.do
