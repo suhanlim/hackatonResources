@@ -33,7 +33,7 @@ public class ElasticsearchConfig {
         }
 
         RestClientBuilder builder = RestClient.builder(
-                        new HttpHost("IP들어갈자리", 9200, "https"))
+                        new HttpHost("52.231.111.63", 9200, "https"))
                 .setHttpClientConfigCallback(httpClientBuilder -> httpClientBuilder
                         .setDefaultCredentialsProvider(credentialsProvider)
                         .setSSLContext(sslContext)
