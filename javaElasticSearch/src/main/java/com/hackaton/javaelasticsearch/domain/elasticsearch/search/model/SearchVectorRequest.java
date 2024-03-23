@@ -20,7 +20,7 @@ public class SearchVectorRequest {
     @Field(type = FieldType.Text)
     private String text;
 
-    @Field(type = FieldType.Dense_Vector, dims = 512) // dims는 실제 차원 수에 따라 조정해야 합니다.
+    @Field(type = FieldType.Dense_Vector, dims = 100) // dims는 실제 차원 수에 따라 조정해야 합니다.
     private float[] vector; // Elasticsearch 8.7.0은 float 배열을 사용합니다.
 
 }

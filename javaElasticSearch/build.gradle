@@ -40,6 +40,6 @@ dependencies {
     //elastic search 의존성 끝
 }
 
-tasks.named('test') {
-    useJUnitPlatform()
-}
+//tasks.named('test') {
+//    useJUnitPlatform()
+//}
