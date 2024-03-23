@@ -11,7 +11,7 @@ import org.springframework.data.elasticsearch.annotations.FieldType;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Document(indexName = "text_vector_index")
+@Document(indexName = "pdf_index")
 
 public class DeleteVector {
     @Id
